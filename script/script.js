@@ -106,7 +106,7 @@ function DisplayController() {
     const game = GameController();
     
     const dialog = document.getElementById('openingScreen');
-    //dialog.showModal();
+    dialog.showModal();
     const preventClosing = true;
     dialog.addEventListener('keydown', (event) => {
       if (event.key === 'Escape' && preventClosing) {
