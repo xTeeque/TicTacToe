@@ -164,6 +164,7 @@ function DisplayController() {
     }
 
     const updateCellColors = (index) => {
+      if (!game.board.isCellAvailable(index)) return;
       if (game.getActivePlayer().token === 'X')
         cells[index].style.color = '#ff6b6b'
       else if (game.getActivePlayer().token === 'O')
