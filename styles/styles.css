@@ -137,12 +137,19 @@ header {
 }
 
 footer {
+    display: flex;
+    justify-content: center;
     position: fixed;
     bottom: 0;
     left: 0;
     color: #ffffff;
-    height: fit-content;
+    height: min(5%, 100px);
     width: 100%;
     background-color: #2d3436;
     font-size: 2rem;
+    gap: 25px;
+}
+
+#github-logo {
+    height: 60%;
 }
